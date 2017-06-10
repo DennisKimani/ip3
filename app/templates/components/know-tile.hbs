@@ -1,0 +1,11 @@
+ <li>
+  {{know.author}}'s question is:-<strong>{{know.question}}</strong>
+  {{#if isExploreShowing }}
+    <p>NOTE:<strong>{{know.explore}}</strong></p>
+    <button {{action 'exploreHide'}}>Hide.</button>
+  {{else}}
+    <button {{action 'exploreShow'}}>How the question erupted.</button>
+  {{/if}}
+  {{update-know know=know update="update"}}
+  <button {{action 'delete' know}}>Delete Question</button>
+</li>

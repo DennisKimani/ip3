@@ -1,0 +1,22 @@
+{{#if updateKnowForm}}
+<h3>Update {{know.author}}'s {{know.question}}</h3>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="author">Author:</label>
+      {{input value=author id="author" placeholder=know.author}}
+    </div>
+    <div class="form-group">
+      <label for="question">Question:</label>
+      {{input value=question id="question" placeholder=know.question}}
+    </div>
+    <div class="form-group">
+      <label for="explore">How??</label>
+      {{input value=explore id="explore" placeholder=know.explore}}
+    </div>
+    <button {{action 'update' know}}>Save</button>
+  </form>
+</div>
+{{else}}
+<button {{action 'updateKnowForm'}}>Update</button>
+{{/if}}

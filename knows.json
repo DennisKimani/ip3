@@ -1,0 +1,14 @@
+{ "knows": [{
+   "author": "Dennis Kimani",
+   "question": "How many wheels does a car have?",
+   "explore": "I came across these question when studying in a driving institution."
+  }, {
+   "author": "Mary Wambui",
+   "question": "How does the DNA mutation work exactly?",
+   "explore": "Our Biology teacher asked us to write an essay about it during the weekend."
+ }, {
+   "author": "Kelvin Wanaina",
+   "question": "Why did David from the Bible have so much courage in everything he did?",
+   "explore": "This passed through my mind when I was in church the other Suday."
+ }]
+}

@@ -1,0 +1,22 @@
+{{#if addNewKnow}}
+  <h3>Add a Question</h3>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="author">Enter your Name(s)</label>
+        {{input value=author id="author"}}
+      </div>
+      <div class="form-group">
+        <label for="question">Enter the Question</label>
+        {{input value=question id="question"}}
+      </div>
+      <div class="from-group">
+        <label for="explore">How you came to it</label>
+        {{input value=explore id="explore"}}
+      </div>
+      <button {{action 'saveKnow1'}}>Save</button>
+    </form>
+  </div>
+  {{else}}
+  <button {{action 'knowFormShow'}}>New Question</button>
+  {{/if}}
